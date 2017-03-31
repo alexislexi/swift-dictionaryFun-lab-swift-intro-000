@@ -86,7 +86,7 @@ class IcecreamTests: XCTestCase {
     }
     
     
-    // 4.
+//    // 4.
     func testFlavorForJoe() {
         let flavor = testIcecream.flavor(forPerson: "Joe")
         XCTAssertNotNil(flavor, "Joe has a favorite flavor, it should not return nil.")
@@ -99,7 +99,7 @@ class IcecreamTests: XCTestCase {
     }
     
     
-    // 5.
+//    // 5.
     func testReplaceFlavorForJoe() {
         let flavorIsChanged = testIcecream.replace(flavor: "Berry", forPerson: "Joe")
         XCTAssertTrue(flavorIsChanged, "This should have returned true, Joe's flavor should also have been updated.")
@@ -117,7 +117,7 @@ class IcecreamTests: XCTestCase {
     }
     
     
-    // 6.
+//    // 6.
     func testRemovePersonForJoe() {
         XCTAssertTrue(testIcecream.remove(person: "Joe"), "Joe should be removed from the dictionary and it should return true.")
         XCTAssertFalse(testIcecream.remove(person: "Joe"), "Joe should have already been removed at this point, it should then return false.")
@@ -128,7 +128,7 @@ class IcecreamTests: XCTestCase {
     }
     
     
-    // 7.
+//    // 7.
     func testNumberOfAttendees() {
         XCTAssertTrue(testIcecream.numberOfAttendees() == 7, "There are 7 attendees.")
     }
@@ -139,7 +139,7 @@ class IcecreamTests: XCTestCase {
     }
     
     
-    // 8.
+//    // 8.
     func testAddPersonWithTravis() {
         let isAddedToParty = testIcecream.add(person: "Travis", withFlavor: "Strawberry")
         XCTAssertTrue(isAddedToParty, "Travis is new to the party, the function should return true.")
@@ -149,7 +149,7 @@ class IcecreamTests: XCTestCase {
     }
 
     
-    // 9.
+//    // 9.
     func testAttendeeList() {
         let expectedList = "Deniz likes Natural Vanilla\nJim likes Natural Vanilla\nJoe likes Peanut Butter and Chocolate\nSophie likes Mexican Chocolate\nSusan likes Cookies 'N' Cream\nTim likes Natural Vanilla\nTom likes Mexican Chocolate"
         
